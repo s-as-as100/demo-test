@@ -1,0 +1,60 @@
+@use "./Styles/modules/colors.module.scss";
+@use "./Styles/modules/globals.module.scss";
+
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: globals.$SPACING_M 0;
+}
+
+.rightBanner {
+  padding: globals.$SPACING_M globals.$SPACING_XL;
+  width: 46%;
+
+  .buttonLeg {
+     
+    .yesbtn {
+      padding: globals.$SPACING_M globals.$SPACING_L;
+      background: colors.$primary;
+      border-radius: 35px;
+      font-weight: 500;
+      color: colors.$secondary;
+      border-color: colors.$primary;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+  .productLegend {
+    display: flex;
+    align-items: center;
+
+
+    .productButton {
+        height: 3rem;
+        padding: 0rem 5rem;
+        background: #FFFFFF;
+        border-radius: 35px;
+        font-weight: 500;
+        border-color: #2C5F52;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+      
+    }
+    .plusButton {
+        margin-left: globals.$SPACING_M;
+    }
+  }
+}
+.detailCont {
+    display: flex;
+    justify-content: center;
+}
+
+.dashedText {
+  color: colors.$primary;
+  border-style: dashed;
+  border-radius: 80px;
+  padding: 0.5rem 3rem;
+}

@@ -1,0 +1,31 @@
+@use "../Styles/modules/colors.module.scss";
+@use "../Styles/modules/globals.module.scss";
+
+.headerContainer {
+  background-color: colors.$secondary;
+  display: flex;
+  justify-content: space-between;
+
+  .headerLegends {
+    display: flex;
+
+    li {
+      padding: 0 globals.$SPACING_M;
+      font-size: globals.$Fontsize_S;
+    }
+  }
+
+  .buttonLegend {
+    display: flex;
+    align-items: center;
+
+    .buttonAccess {
+        padding:globals.$SPACING_M globals.$SPACING_L;
+        background: colors.$primary;
+        border-radius: 35px;
+        font-weight: 500;
+        color: colors.$secondary;
+        border-color: colors.$primary;
+    }
+  }
+}

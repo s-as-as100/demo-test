@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Header from "./Components/Header";
+import Layout from "./Components/Layout";
+import "./App.scss";
+import playButton from "./assets/playButton.png";
+import banner from "./assets/leftbanner.png";
+import details from "./assets/details.png";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header />
+      <div className="bannerContainer">
+        <div className="rightBanner">
+          <span className="titleLegend">
+            <h1>
+              Unlock <span className="dashedText">Your</span>
+            </h1>
+            <h1>Online Growth</h1>
+            <h1>
+              Potential{" "}
+              <span className="buttonLeg">
+                <button className="yesbtn">Yes</button>
+              </span>
+            </h1>
+          </span>
+          <div className="productLegend">
+            <button className="productButton">Our Product</button>
+            <img className="plusButton" src={playButton} />
+          </div>
+        </div>
+        <div className="leftBanner">
+          <img src={banner} />
+        </div>
+      </div>
+      <div className="detailCont">
+        <img src={details} />
+      </div>
+    </Layout>
   );
-}
+};
 
 export default App;

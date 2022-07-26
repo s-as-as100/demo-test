@@ -1,0 +1,5 @@
+@use "../Styles/modules/globals.module.scss";
+
+.layout {
+  padding: globals.$SPACING_M globals.$SPACING_XXL;
+}
